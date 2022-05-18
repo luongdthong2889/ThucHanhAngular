@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h1>{{ laptop.id }}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        {{ laptop.name }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        {{ laptop.price }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        {{ laptop.description }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group" appDropdown>
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Manage
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a (click)="onEditLaptop()" class="dropdown-item" style="cursor: pointer;">Edit Laptop</a>
+                    <a (click)="onDeleteLaptop()"  class="dropdown-item" style="cursor: pointer;">Delete Laptop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

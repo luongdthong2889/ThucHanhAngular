@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm-12">
+      <button (click)="onNewLaptop()" class="btn btn-success">New Laptop</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="list-group">
+        <app-laptop-item *ngFor="let laptopItem of laptops; let i = index" 
+        [laptop]="laptopItem"
+        [index]="i">
+        </app-laptop-item>
+      </div>
+    </div>
+  </div>
